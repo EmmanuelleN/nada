@@ -111,7 +111,10 @@
     <div class="w-full lg:w-3/4 lg:px-4 mb-8 lg:mb-0">
 
       <%= image_tag('mon-cdi-mobile', class: 'mb-2') %>
-      <%= link_to "Découvrir le projet →", root_path, class: "font-mono font-bold text-blue text-right float-right" %>
+      <%= link_to "Découvrir le projet →", root_path,
+        class: "font-mono font-bold text-blue text-right float-right
+               hover:underline transition-all transition-500 transition-ease-in-out"
+      %>
 
     </div>
 
@@ -138,7 +141,7 @@
     <%= link_to "nous contacter", root_path,
       class: "font-mono font-bold text-white px-8 py-4 rounded-sm border-solid border-2 border-white inline-block
              hover:border-green hover:bg-green hover:text-black
-             focus:border-green-light focus:bg-green-light"
+             focus:border-green-light focus:bg-green-light transition-all transition-300 transition-ease-in-out"
     %>
   </div>
 </section>
