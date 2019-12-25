@@ -1,2 +1,144 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<section class="min-h-screen flex flex-col">
+  <div class="bg-green-light flex-grow">
+    <div class="container">
+      <h1 class="font-display font-bold text-3xl text-black max-w-3xl mt-20 mb-12 md:mt-64">
+        nada est un studio qui imagine, conçoit et développe vos sites et applications web.
+      </h1>
+      <%= link_to "nous contacter", root_path, class: "font-mono font-bold text-white bg-black px-8 py-4 rounded-sm" %>
+    </div>
+  </div>
+    <div class="container flex-grow-0 my-8">
+      <%= link_to "En savoir plus ↓", root_path, class: "font-mono font-bold text-gray-500" %>
+    </div>
+</section>
+
+<section class="container mt-12 mb-20">
+  <div class="flex flex-wrap lg:-mx-16">
+    <div class="w-full lg:w-1/2 lg:px-16 mb-12 lg:mb-0">
+      <h2 class="font-mono text-lg text-blue font-bold mb-4">Notre approche</h2>
+      <p class="font-display font-bold text-2xl text-black mb-5">Penser produit plutôt que technique</p>
+      <p class="font-body text-xl text-gray-800">
+        Nous maitrisons toute la chaîne de création d’un produit web, de la conception au développement.
+        Au delà des aspects techniques, nos connaissances en produit, marketing et SEO nous permettent de développer
+        des sites et applications web vraiment efficaces.
+      </p>
+    </div>
+
+    <div class="w-full lg:w-1/2 lg:px-16">
+      <span class="font-mono text-green text-6xl leading-none">“</span>
+      <p class="font-display text-xl font-light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.”
+      </p>
+      <p>Mehdi Coly, CTO à Mon CDI</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-900 text-white">
+  <div class="container py-20">
+    <h2 class="font-display font-bold text-2xl text-center mb-5">Services</h2>
+    <p class="font-body text-center text-xl text-gray-200 mb-16 max-w-xl mx-auto">
+      Nous pouvons intervenir ponctuellement (développement ou design seul par exemple) ou vous accompagner plus
+      globalement sur la réalisation d’un projet web.
+    </p>
+
+    <div class="flex flex-wrap lg:-mx-16">
+
+      <div class="w-full lg:w-1/3 lg:px-16 mb-16 lg:mb-0">
+        <%= embedded_svg 'empty-potato.svg', class: 'mb-6 mx-auto stroke-current' %>
+        <h3 class="font-display font-bold text-xl text-center mb-5">Conception</h3>
+        <p class="font-body text-gray-200 mb-2">
+          Un site ou une application web réussis, c’est d’abord une stratégie et une bonne compréhension de vos
+          utilisateurs.
+        </p>
+        <p class="font-body text-gray-200">
+          Nous pouvons vous accompagner sur cette étape : définition de la proposition de valeur,
+          direction produit, workshop ou design sprint avec votre équipe ...
+        </p>
+      </div>
+
+      <div class="w-full lg:w-1/3 lg:px-16 mb-16 lg:mb-0">
+        <%= embedded_svg 'empty-potato.svg', class: 'mb-6 mx-auto stroke-current fill-current text-green' %>
+        <h3 class="font-display font-bold text-xl text-center mb-5">Design</h3>
+        <p class="font-body text-gray-200 mb-2">
+          Pour nous, le design est avant tout au service de votre proposition de valeur et de vos utilisateurs.
+        </p>
+        <p class="font-body text-gray-200">
+          Nous priorisons l’ergonomie (UX design, tests utilisateurs), et pouvons également réaliser
+          la conception graphique de votre produit (UI design).
+        </p>
+      </div>
+
+      <div class="w-full lg:w-1/3 lg:px-16 mb-16 lg:mb-0">
+        <%= embedded_svg 'empty-potato.svg', class: 'mb-6 mx-auto stroke-current fill-current' %>
+        <h3 class="font-display font-bold text-xl text-center mb-5">Développement</h3>
+        <p class="font-body text-gray-200 mb-2">
+          Nous développons sites web, applications et API.
+        </p>
+        <p class="font-body text-gray-200">
+          La qualité du code est essentielle pour nous, car c’est ce qui vous permet d’avoir un produit maintenable
+          et évolutif. Comme le code doit avant tout permettre de résoudre un problème pour vos utilisateur,
+          nous travaillons de façon agile et itérative.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="container my-20">
+  <h2 class="font-mono text-lg text-blue font-bold mb-4">Notre dernier projet</h2>
+
+  <div class="flex flex-wrap lg:-mx-16 mb-12">
+    <div class="w-full lg:w-1/2 lg:px-16 mb-8 lg:mb-0">
+      <p class="font-display font-bold text-2xl text-black mb-5">Mon CDI</p>
+      <p class="font-display text-xl font-light text-gray-800">
+        Pour qu’emploi flexible ne rime pas avec précarité.
+      </p>
+    </div>
+
+    <div class="w-full lg:w-1/2 lg:px-16">
+      <p class="font-body text-gray-800">
+        Mon CDI est une alternative à l’intérim, qui repose sur le travail à temps partagé. Nous avons travaillé à
+        la création de la marque Mon CDI et au développement d’une application web (mobile-first) permettant de
+        mettre en contact candidats et recruteurs de mon CDI.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap lg:-mx-4">
+    <div class="w-full lg:w-3/4 lg:px-4 mb-8 lg:mb-0">
+
+      <%= image_tag('mon-cdi-mobile', class: 'mb-2') %>
+      <%= link_to "Découvrir le projet →", root_path, class: "font-mono font-bold text-blue text-right float-right" %>
+
+    </div>
+
+    <div class="w-full lg:w-1/4 lg:px-4 mb-8 lg:mb-0">
+      <p class="font-mono font-bold text-gray-500 mb-6">Ce que nous avons fait</p>
+      <ul>
+        <li class="font-body text-gray-700 mb-4">Branding</li>
+        <li class="font-body text-gray-700 mb-4">Direction produit (product management)</li>
+        <li class="font-body text-gray-700 mb-4">Web design (UX et UI)</li>
+        <li class="font-body text-gray-700 mb-4">Tests utilisateurs</li>
+        <li class="font-body text-gray-700 mb-4">Développement web (application web mobile first)</li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<section class="container my-20">
+  <div class="bg-gray-900 text-white rounded-sm p-12 lg:p-16 text-center">
+    <p class="font-display font-bold text-2xl mb-5">Une question ? Un projet à discuter ?</p>
+    <p class="font-body text-center text-xl text-gray-200 mb-16">
+      Nous serons ravis d’en parler avec vous et de vous conseiller.
+    </p>
+    <%= link_to "nous contacter", root_path,
+      class: "font-mono font-bold text-white px-8 py-4 rounded-sm border-solid border-2 border-white inline-block
+             hover:border-green hover:bg-green hover:text-black
+             focus:border-green-light focus:bg-green-light"
+    %>
+  </div>
+</section>
