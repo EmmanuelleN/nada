@@ -1,7 +1,8 @@
 @import 'config/fonts';
+@import 'config/colors';
 
 @import 'tailwindcss/base';
-
 @import 'tailwindcss/components';
-
 @import 'tailwindcss/utilities';
+
+@import 'components/retro_button'

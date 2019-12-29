@@ -1,10 +1,12 @@
 <section class="min-h-screen flex flex-col">
   <div class="bg-green-light flex-grow">
     <div class="container">
-      <h1 class="font-display font-bold text-3xl text-black max-w-3xl mt-20 mb-12 md:mt-64">
+      <h1 class="font-display font-bold text-3xl lg:text-4xl text-black max-w-3xl mt-20 mb-12 md:mt-64">
         nada est un studio qui imagine, conçoit et développe vos sites et applications web.
       </h1>
-      <%= link_to "nous contacter", root_path, class: "font-mono font-bold text-white bg-black px-8 py-4 rounded-sm" %>
+      <%= link_to root_path, class: 'RetroButton' do %>
+        <span class="RetroButton-text">nous contacter</span>
+      <% end %>
     </div>
   </div>
     <div class="container flex-grow-0 my-8">
@@ -25,20 +27,22 @@
     </div>
 
     <div class="w-full lg:w-1/2 lg:px-16">
-      <span class="font-mono text-green text-6xl leading-none">“</span>
-      <p class="font-display text-xl font-light">
+      <%= embedded_svg 'citation-icone.svg', class: 'mb-6 w-8' %>
+      <p class="font-display text-2xl font-light mb-4 text-gray-800">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.”
       </p>
-      <p>Mehdi Coly, CTO à Mon CDI</p>
+      <p class="font-body text-xl text-gray-600">
+        <strong>Mehdi Coly,</strong> CTO à Mon CDI
+      </p>
     </div>
   </div>
 </section>
 
 <section class="bg-gray-900 text-white">
-  <div class="container py-20">
+  <div class="container py-24">
     <h2 class="font-display font-bold text-2xl text-center mb-5">Services</h2>
-    <p class="font-body text-center text-xl text-gray-200 mb-16 max-w-xl mx-auto">
+    <p class="font-body text-center text-xl text-gray-200 mb-24 max-w-xl mx-auto">
       Nous pouvons intervenir ponctuellement (développement ou design seul par exemple) ou vous accompagner plus
       globalement sur la réalisation d’un projet web.
     </p>
@@ -83,6 +87,13 @@
         </p>
       </div>
     </div>
+
+    <div class="mx-auto mt-20 text-center">
+      <%= link_to root_path, class: 'RetroButton RetroButton--white' do %>
+        <span class="RetroButton-text RetroButton-text--blue">nous contacter</span>
+      <% end %>
+    </div>
+
   </div>
 
 </section>
