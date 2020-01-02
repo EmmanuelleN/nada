@@ -1,5 +1,7 @@
-<section class="container my-12 md:my-20">
-  <h1 class="font-display font-bold text-3xl lg:text-4xl text-black mb-8">Tous nos projets</h1>
+<% content_for :navbar_mode, 'color' %>
+
+<section class="container mb-12 md:mb-20 mt-32">
+  <h1 class="font-display font-bold text-3xl lg:text-4xl text-black mb-8 lg:mb-16">Tous nos projets</h1>
   <div class="flex flex-wrap lg:-mx-16">
     <div class="w-full lg:w-2/3 lg:px-16 mb-8 lg:mb-0">
       <%= image_tag('mon-cdi-mobile', class: 'w-full h-48 sm:h-64 lg:h-96 object-cover') %>
