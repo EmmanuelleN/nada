@@ -82,7 +82,11 @@ module.exports = {
       'opacity': 'opacity',
       'transform': 'transform',
     },
-    extend: {}
+    extend: {
+      spacing: {
+        '96': '24rem',
+      }
+    }
   },
   variants: { // all the following default to ['responsive']
     transitionProperty: ['responsive'],

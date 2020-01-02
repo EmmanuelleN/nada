@@ -1,0 +1,50 @@
+<section class="container my-12 md:my-20">
+  <h1 class="font-display font-bold text-3xl lg:text-4xl text-black mb-8">Tous nos projets</h1>
+  <div class="flex flex-wrap lg:-mx-16">
+    <div class="w-full lg:w-2/3 lg:px-16 mb-8 lg:mb-0">
+      <%= image_tag('mon-cdi-mobile', class: 'w-full h-48 sm:h-64 lg:h-96 object-cover') %>
+    </div>
+
+    <div class="w-full lg:w-1/3 lg:px-16 mb-8 lg:mb-0">
+      <h2 class="font-display font-bold text-2xl text-black mb-3">Mon CDI</h2>
+      <p class="font-body text-gray-800">
+        Mon CDI est une alternative à l’intérim. Nous avons travaillé à la création de la marque Mon CDI et
+        au développement d’une application web.
+      </p>
+      <%= link_to root_path, class: 'RetroButton RetroButton--smaller mt-10' do %>
+        <span class="RetroButton-text">voir le projet</span>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="container my-12 md:my-20">
+  <div class="flex flex-wrap lg:-mx-16">
+    <div class="w-full lg:w-1/2 lg:px-16 mb-12 lg:mb-0">
+      <h2 class="font-display font-bold text-2xl text-black mb-3">Time for the Planet</h2>
+      <p class="font-body text-gray-800">
+        Time for the Planet finance et crée des entreprises luttant contre le déréglement climatique.
+        Nous les avons accompagnés sur le design et le développement de leur site.
+      </p>
+      <%= image_tag('mon-cdi-mobile', class: 'w-full h-48 sm:h-64 object-cover mt-5 mb-2') %>
+      <%= link_to "Voir le projet →", root_path,
+        class: "font-mono font-bold text-blue text-right float-right
+               hover:underline transition-all transition-500 transition-ease-in-out"
+      %>
+    </div>
+    <div class="w-full lg:w-1/2 lg:px-16 mb-12 lg:mb-0">
+      <h2 class="font-display font-bold text-2xl text-black mb-3">Hogo Avocats</h2>
+      <p class="font-body text-gray-800">
+        Hogo est une société d'avocats qui accompagne les entreprises. Nous avons designé et développé un site statique
+        pour présenter leur activité, ainsi qu'un blog et un espace infographies.
+      </p>
+      <%= image_tag('mon-cdi-mobile', class: 'w-full h-48 sm:h-64 object-cover mt-5 mb-2') %>
+      <%= link_to "Voir le projet →", root_path,
+        class: "font-mono font-bold text-blue text-right float-right
+               hover:underline transition-all transition-500 transition-ease-in-out"
+      %>
+    </div>
+    <div class="w-full lg:w-1/2 lg:px-16 mb-8 lg:mb-0"></div>
+  </div>
+
+</section>
