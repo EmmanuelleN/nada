@@ -1,0 +1,27 @@
+<navbar class="h-24 absolute w-full top-0">
+  <div class="flex container items-center justify-between my-6">
+    <%= link_to root_path do %>
+      <% if navbar_mode == 'black' %>
+        <%= embedded_svg 'logo-nada-noir.svg', class: 'w-auto h-8' %>
+      <% elsif navbar_mode == 'color' %>
+        <%= embedded_svg 'logo-nada-noir-bleu.svg', class: 'w-auto h-8' %>
+      <% end %>
+    <% end %>
+    <ul class="flex items-baseline">
+      <li>
+        <%= link_to "Services", root_path, class: "font-mono font-bold text-black hover:text-gray-800" %>
+      </li>
+      <li>
+        <%= link_to "Projets", projects_path, class: "font-mono font-bold text-black ml-12 hover:text-gray-800" %>
+      </li>
+      <li>
+        <%= link_to "Equipe", projects_path, class: "font-mono font-bold text-black ml-12 hover:text-gray-800" %>
+      </li>
+      <li>
+        <%= link_to "nous contacter", projects_path,
+          class: "font-mono font-bold  ml-12 px-6 py-3 inline-block rounded-sm #{navbar_button_color(navbar_mode)}"
+        %>
+      </li>
+    </ul>
+  </div>
+</navbar>

@@ -11,6 +11,7 @@
   </head>
 
   <body class="bg-white">
+    <%= render 'pages/navbar', navbar_mode: yield(:navbar_mode) %>
     <%= yield %>
   </body>
 </html>
