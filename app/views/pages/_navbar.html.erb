@@ -5,17 +5,19 @@
         <%= embedded_svg 'logo-nada-noir.svg', class: 'w-auto h-8' %>
       <% elsif navbar_mode == 'color' %>
         <%= embedded_svg 'logo-nada-noir-bleu.svg', class: 'w-auto h-8' %>
+        <% elsif navbar_mode == 'white' %>
+          <%= embedded_svg 'logo-nada-blanc.svg', class: 'w-auto h-8' %>
       <% end %>
     <% end %>
     <ul class="flex items-baseline">
       <li>
-        <%= link_to "Services", root_path, class: "font-mono font-bold text-black hover:text-gray-800" %>
+        <%= link_to "Services", services_path, class: "font-mono font-bold #{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
-        <%= link_to "Projets", projects_path, class: "font-mono font-bold text-black ml-12 hover:text-gray-800" %>
+        <%= link_to "Projets", projects_path, class: "font-mono font-bold ml-12 #{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
-        <%= link_to "Equipe", projects_path, class: "font-mono font-bold text-black ml-12 hover:text-gray-800" %>
+        <%= link_to "Equipe", projects_path, class: "font-mono font-bold ml-12 #{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
         <%= link_to "nous contacter", projects_path,
