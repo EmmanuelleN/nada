@@ -2,6 +2,11 @@
 @import 'config/colors';
 
 @import 'tailwindcss/base';
+
+p {
+  @apply leading-relaxed;
+}
+
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 

@@ -14,10 +14,17 @@ module ApplicationHelper
     if navbar_mode == 'black'
       "text-white bg-black hover:bg-gray-800"
     elsif navbar_mode == 'white'
-      "text-white bg-black hover:bg-gray-800"
+      "text-black bg-green hover:bg-green-light"
     elsif navbar_mode == 'color'
       "text-white bg-blue hover:bg-blue-light"
     end
   end
 
+  def navbar_text_color(navbar_mode)
+    if navbar_mode == 'black' || navbar_mode == 'color'
+      "text-black hover:text-gray-800"
+    elsif navbar_mode == 'white'
+      "text-white hover:text-gray-200"
+    end
+  end
 end
