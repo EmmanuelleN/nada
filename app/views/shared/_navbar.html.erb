@@ -1,5 +1,5 @@
-<navbar class="h-24 absolute w-full top-0">
-  <div class="flex container items-center justify-between my-6">
+<navbar class="h-24 absolute w-full top-0 font-mono font-bold">
+  <div class="flex container items-baseline justify-between my-6">
     <%= link_to root_path do %>
       <% if navbar_mode == 'black' %>
         <%= embedded_svg 'logo-nada-noir.svg', class: 'w-auto h-8' %>
@@ -9,21 +9,24 @@
           <%= embedded_svg 'logo-nada-blanc.svg', class: 'w-auto h-8' %>
       <% end %>
     <% end %>
-    <ul class="flex items-baseline">
+    <ul class="items-baseline hidden md:flex">
       <li>
-        <%= link_to "Services", services_path, class: "font-mono font-bold #{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Services", services_path, class: "#{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
-        <%= link_to "Projets", projects_path, class: "font-mono font-bold ml-12 #{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Projets", projects_path, class: "ml-12 #{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
-        <%= link_to "Equipe", projects_path, class: "font-mono font-bold ml-12 #{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Equipe", projects_path, class: "ml-12 #{navbar_text_color(navbar_mode)}" %>
       </li>
       <li>
         <%= link_to "nous contacter", projects_path,
-          class: "font-mono font-bold  ml-12 px-6 py-3 inline-block rounded-sm #{navbar_button_color(navbar_mode)}"
+          class: "ml-12 px-6 py-3 inline-block rounded-sm #{navbar_button_color(navbar_mode)}"
         %>
       </li>
     </ul>
+    <button class="md:hidden items-baseline text-xl font-bold hover:underline <%= navbar_hamburger_color(navbar_mode) %>">
+      → menu
+    </button>
   </div>
 </navbar>
