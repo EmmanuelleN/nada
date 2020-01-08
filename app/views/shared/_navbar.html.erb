@@ -25,7 +25,11 @@
         %>
       </li>
     </ul>
-    <button class="md:hidden items-baseline text-xl font-bold hover:underline <%= navbar_hamburger_color(navbar_mode) %>">
+    <button type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+            data-action="navbar#openMenu"
+            class="md:hidden items-baseline text-xl font-bold hover:underline <%= navbar_toggle_color(navbar_mode) %>">
       → menu
     </button>
   </div>

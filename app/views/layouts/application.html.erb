@@ -14,7 +14,8 @@
     <%= favicon_link_tag asset_path('nada-favicon.png') %>
   </head>
 
-  <body class="bg-white">
+  <body class="bg-white" data-controller="navbar" data-action="resize@window->navbar#closeMenuOnLargeBreakpoint">
+    <%= render 'shared/mobile_menu' %>
     <%= render 'shared/navbar', navbar_mode: yield(:navbar_mode) %>
     <%= yield %>
     <%= render 'shared/footer', cta: yield(:cta) %>

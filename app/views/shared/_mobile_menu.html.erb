@@ -1,0 +1,31 @@
+<navbar class="w-screen absolute w-full top-0 bottom-0 block bg-gray-900 hidden z-20 font-mono font-bold"
+        data-target="navbar.menu">
+  <div class="flex container items-baseline justify-between my-6">
+    <%= link_to root_path do %>
+      <%= embedded_svg 'logo-nada-blanc.svg', class: 'w-auto h-8' %>
+    <% end %>
+    <button type="button"
+            aria-label="Menu"
+            aria-controls="navigation"
+            data-action="navbar#closeMenu"
+            class="md:hidden items-baseline font-bold hover:underline text-xl text-white">
+      ✕ fermer
+    </button>
+  </div>
+  <ul class="items-baseline md:flex text-center mt-24">
+    <li>
+      <%= link_to "Services", services_path, class: "text-white hover:underline" %>
+    </li>
+    <li class="mt-8">
+      <%= link_to "Projets", projects_path, class: "text-white hover:underline" %>
+    </li>
+    <li class="mt-8">
+      <%= link_to "Equipe", team_path, class: "text-white hover:underline" %>
+    </li>
+    <li class="mt-8">
+      <%= link_to "Nous contacter", contact_path,
+          class: "text-green hover:underline"
+      %>
+    </li>
+  </ul>
+</navbar>

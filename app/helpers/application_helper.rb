@@ -28,7 +28,7 @@ module ApplicationHelper
     end
   end
 
-  def navbar_hamburger_color(navbar_mode)
+  def navbar_toggle_color(navbar_mode)
     if navbar_mode == 'black'
       "text-black"
     elsif navbar_mode == 'white'
