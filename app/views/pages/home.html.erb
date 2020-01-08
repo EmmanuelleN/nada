@@ -1,24 +1,27 @@
 <% content_for :navbar_mode, 'black' %>
 
 <section class="min-h-screen flex flex-col">
-  <div class="bg-green-light flex-grow">
+  <div class="bg-green-light flex-grow BottomBorder flex flex-col justify-center">
     <div class="container">
-      <h1 class="font-display font-bold text-3xl lg:text-4xl text-black max-w-3xl mt-20 mb-12 md:mt-64">
+      <h1 class="font-display font-bold text-3xl lg:text-4xl text-black max-w-3xl mt-24 mb-12 ">
         nada est un studio qui imagine, conçoit et développe vos sites et applications web.
       </h1>
-      <%= link_to contact_path, class: 'RetroButton' do %>
+      <%= link_to contact_path, class: 'RetroButton mb-8' do %>
         <span class="RetroButton-text">nous contacter</span>
       <% end %>
     </div>
   </div>
     <div class="container flex-grow-0 my-8">
-      <%= link_to "En savoir plus ↓", root_path, class: "font-mono font-bold text-gray-500" %>
+      <%= link_to "En savoir plus ↓", root_path(anchor: 'know-more'),
+        class: "font-mono font-bold text-gray-500 hover:underline",
+        id: 'know-more'
+      %>
     </div>
 </section>
 
-<section class="container mt-12 mb-20">
+<section class="container mt-12 mb-16 lg:mb-20">
   <div class="flex flex-wrap lg:-mx-16">
-    <div class="w-full lg:w-1/2 lg:px-16 mb-12 lg:mb-0">
+    <div class="w-full lg:w-1/3 lg:px-16 mb-12 lg:mb-0">
       <h2 class="font-mono text-lg text-blue font-bold mb-4">Notre approche</h2>
       <p class="font-display font-bold text-2xl text-black mb-5">Penser produit plutôt que technique</p>
       <p class="font-body text-xl text-gray-800">
@@ -28,11 +31,15 @@
       </p>
     </div>
 
-    <div class="w-full lg:w-1/2 lg:px-16">
+    <div class="w-full lg:w-2/3 lg:px-16">
       <%= embedded_svg 'citation-icone.svg', class: 'mb-6 w-8' %>
-      <p class="font-display text-2xl font-light mb-4 text-gray-800">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.”
+      <p class="font-display text-lg lg:text-xl font-light mb-4 text-gray-800">
+        Emmanuelle et François sont exactement l’équipe qu’il faut avoir lorsqu’on souhaite concevoir un produit web
+        type application, plateforme ou site internet en 2020. Issus du monde marketing, ils envisagent la création
+        web du point de vue de son futur utilisateur, et non avec un prisme purement technique.
+        Capables à la fois de rédiger le contenu textuel, de l’illustrer visuellement, d’écouter des utilisateurs
+        pour en déduire les problèmes à régler ainsi que les fonctionnalités prioritaires, ils excellent également
+        dans la rapidité d’exécuton, les choix technologiques et le développement web proprement dit. Efficacité !”
       </p>
       <p class="font-body text-xl text-gray-600">
         <strong>Mehdi Coly,</strong> CTO à Mon CDI
@@ -42,7 +49,7 @@
 </section>
 
 <section class="bg-gray-900 text-white">
-  <div class="container py-24">
+  <div class="container py-16 lg:py-20">
     <h2 class="font-display font-bold text-2xl text-center mb-5">Services</h2>
     <p class="font-body text-center text-xl text-gray-200 mb-24 max-w-xl mx-auto">
       Nous pouvons intervenir ponctuellement (développement ou design seul par exemple) ou vous accompagner plus
@@ -50,13 +57,12 @@
     </p>
 
     <div class="flex flex-wrap lg:-mx-16">
-
       <div class="w-full lg:w-1/3 lg:px-16 mb-16 lg:mb-0">
         <%= embedded_svg 'empty-potato.svg', class: 'mb-6 mx-auto stroke-current' %>
         <h3 class="font-display font-bold text-xl text-center mb-5">Conception</h3>
         <p class="font-body text-gray-200 mb-2">
           Un site ou une application web réussis, c’est d’abord une stratégie et une bonne compréhension de vos
-          utilisateurs.
+          utilisateur·rice·s.
         </p>
         <p class="font-body text-gray-200">
           Nous pouvons vous accompagner sur cette étape : définition de la proposition de valeur,
@@ -68,10 +74,11 @@
         <%= embedded_svg 'empty-potato.svg', class: 'mb-6 mx-auto stroke-current fill-current text-green' %>
         <h3 class="font-display font-bold text-xl text-center mb-5">Design</h3>
         <p class="font-body text-gray-200 mb-2">
-          Pour nous, le design est avant tout au service de votre proposition de valeur et de vos utilisateurs.
+          Pour nous, le design est avant tout au service de votre proposition de valeur et des personnes utilisant votre
+          site ou application.
         </p>
         <p class="font-body text-gray-200">
-          Nous priorisons l’ergonomie (UX design, tests utilisateurs), et pouvons également réaliser
+          Nous priorisons l’ergonomie (UX design, tests utilisateur·rice·s), et pouvons également réaliser
           la conception graphique de votre produit (UI design).
         </p>
       </div>
@@ -84,13 +91,13 @@
         </p>
         <p class="font-body text-gray-200">
           La qualité du code est essentielle pour nous, car c’est ce qui vous permet d’avoir un produit maintenable
-          et évolutif. Comme le code doit avant tout permettre de résoudre un problème pour vos utilisateur,
-          nous travaillons de façon agile et itérative.
+          et évolutif. Nous travaillons de façon agile et itérative, afin de vous livrer au plus vite et d'adapter
+          votre site ou application selon l'évolution du projet.
         </p>
       </div>
     </div>
 
-    <div class="mx-auto mt-20 text-center">
+    <div class="mx-auto mt-8 lg:mt-20 text-center">
       <%= link_to services_path, class: 'RetroButton RetroButton--white' do %>
         <span class="RetroButton-text RetroButton-text--blue">tous nos services</span>
       <% end %>
@@ -100,7 +107,7 @@
 
 </section>
 
-<section class="container my-6 sm:my-12 lg:my-20">
+<section class="container my-16 lg:my-20">
   <h2 class="font-mono text-lg text-blue font-bold mb-4">Notre dernier projet</h2>
 
   <div class="flex flex-wrap lg:-mx-16 mb-12">
@@ -115,7 +122,7 @@
       <p class="font-body text-gray-800">
         Mon CDI est une alternative à l’intérim, qui repose sur le travail à temps partagé. Nous avons travaillé à
         la création de la marque Mon CDI et au développement d’une application web (mobile-first) permettant de
-        mettre en contact candidats et recruteurs de mon CDI.
+        mettre en contact candidat·e·s et recruteur·se·s de mon CDI.
       </p>
     </div>
   </div>
@@ -124,9 +131,9 @@
     <div class="w-full lg:w-3/4 lg:px-4 mb-8 lg:mb-0">
 
       <%= image_tag('mon-cdi-presentation', class: 'w-full h-48 sm:h-96 object-cover mb-2') %>
-      <%= link_to "Découvrir le projet →", root_path,
+      <%= link_to "Découvrir le projet →", mon_cdi_project_path,
         class: "font-mono font-bold text-blue text-right float-right
-               hover:underline transition-all transition-500 transition-ease-in-out"
+               hover:underline"
       %>
 
     </div>
@@ -137,8 +144,8 @@
         <li class="font-body text-gray-700 mb-4">Branding</li>
         <li class="font-body text-gray-700 mb-4">Direction produit (product management)</li>
         <li class="font-body text-gray-700 mb-4">Web design (UX et UI)</li>
-        <li class="font-body text-gray-700 mb-4">Tests utilisateurs</li>
-        <li class="font-body text-gray-700 mb-4">Développement web (application web mobile first)</li>
+        <li class="font-body text-gray-700 mb-4">Tests utilisateur·rice·s</li>
+        <li class="font-body text-gray-700">Développement web (application web mobile first)</li>
       </ul>
 
     </div>
