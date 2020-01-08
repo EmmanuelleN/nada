@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def team
   end
+
+  def mon_cdi_project
+  end
 end
