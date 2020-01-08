@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def mon_cdi_project
   end
+
+  def contact
+  end
 end

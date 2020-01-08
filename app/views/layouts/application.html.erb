@@ -17,6 +17,6 @@
   <body class="bg-white">
     <%= render 'shared/navbar', navbar_mode: yield(:navbar_mode) %>
     <%= yield %>
-    <%= render 'shared/footer', navbar_mode: yield(:navbar_mode) %>
+    <%= render 'shared/footer', cta: yield(:cta) %>
   </body>
 </html>
