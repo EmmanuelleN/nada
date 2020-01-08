@@ -1,5 +1,10 @@
 <% content_for :navbar_mode, 'color' %>
 
+<% content_for :meta_title, 'Equipe | nada, studio web.' %>
+<% content_for :meta_desc,
+  "Nada est un studio qui imagine, conçoit et développe vos sites et applications web. Découvrez notre équipe."
+%>
+
 <section class="container mb-12 md:mb-20 mt-32 lg:px-16">
   <h1 class="font-display font-bold text-3xl lg:text-4xl text-black text-center mb-4">Notre équipe</h1>
   <p class="font-display text-2xl font-light mb-4 text-gray-800 text-center mb-16">Petite équipe, grands résultats !</p>
@@ -8,7 +13,10 @@
 <section class="container mb-12 md:mb-20 mt-20 lg:px-16">
   <div class="flex flex-wrap lg:-mx-16">
     <div class="w-full lg:w-1/4 lg:px-16 mb-6">
-      <%= image_tag('emmanuelle-nada', class: 'w-48 mb-4 mx-auto lg:mb-0 lg:w-full') %>
+      <%= image_tag('emmanuelle-nada',
+        class: 'w-48 mb-4 mx-auto lg:mb-0 lg:w-full',
+        alt: "Photo d'Emmanuelle, développeuse chez Nada")
+      %>
     </div>
     <div class="w-full lg:w-3/4 lg:px-16 mb-12">
       <h2 class="font-display font-bold text-xl text-black">Emmanuelle Nadal</h2>
@@ -29,19 +37,21 @@
       </p>
       <p class="font-body text-gray-800 mb-4">
         <strong>Ses outils et technologies préférées sont :</strong> un papier et un crayon - la communication -
-        Sketch - Figma - Ruby on Rails.
+        Sketch - Figma - Ruby on Rails - Tailwind CSS.
       </p>
     </div>
 
     <div class="w-full lg:w-1/4 lg:px-16 mb-6">
-      <%= image_tag('francois-nada', class: 'w-48 mb-4 mx-auto lg:mb-0 lg:w-full') %>
+      <%= image_tag('francois-nada',
+      class: 'w-48 mb-4 mx-auto lg:mb-0 lg:w-full',
+      alt: "Photo de Fraçois, développeur chez Nada") %>
     </div>
     <div class="w-full lg:w-3/4 lg:px-16 mb-12">
       <h2 class="font-display font-bold text-xl text-black">François Blanc</h2>
       <p class="font-mono text-lg text-blue font-bold mt-2 mb-4">Développement</p>
       <p class="font-body text-gray-800 mb-4">
         François aime vraiment beaucoup les ordinateurs (il aime les humains aussi, rassurez-vous). Il aime le code
-        de qualité, clair, maintenable et surtout qui rend service à ses utilisateurs.
+        de qualité, clair, maintenable et surtout qui rend service à ses utilisateur·rice·s.
       </p>
       <p class="font-body text-gray-800 mb-4">
         Il n’aime pas trop parler de lui (d’ailleurs, ce n’est pas lui qui a écrit ce texte). Par contre, il écoute
@@ -53,7 +63,7 @@
         toujours avec un ordinateur.
       </p>
       <p class="font-body text-gray-800 mb-4">
-        <strong>Ses outils et technologies préférées sont :</strong> Node.js - Ruby on Rails - les tests automatisés.
+        <strong>Ses outils et technologies préférées sont :</strong> Node.js - React - Ruby on Rails - les tests automatisés.
       </p>
     </div>
 
@@ -67,7 +77,5 @@
         illustration, marketing... nous aurons toujours quelqu’un·e à vous recommander !
       </p>
     </div>
-
   </div>
-
 </section>
