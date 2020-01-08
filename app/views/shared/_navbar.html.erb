@@ -11,13 +11,13 @@
     <% end %>
     <ul class="items-baseline hidden md:flex">
       <li>
-        <%= link_to "Services", services_path, class: "#{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Services", services_path, class: "#{navbar_text_color(navbar_mode)} hover:underline" %>
       </li>
       <li>
-        <%= link_to "Projets", projects_path, class: "ml-12 #{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Projets", projects_path, class: "ml-12 #{navbar_text_color(navbar_mode)} hover:underline" %>
       </li>
       <li>
-        <%= link_to "Equipe", team_path, class: "ml-12 #{navbar_text_color(navbar_mode)}" %>
+        <%= link_to "Equipe", team_path, class: "ml-12 #{navbar_text_color(navbar_mode)} hover:underline" %>
       </li>
       <li>
         <%= link_to "nous contacter", contact_path,

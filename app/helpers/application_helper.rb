@@ -22,19 +22,19 @@ module ApplicationHelper
 
   def navbar_text_color(navbar_mode)
     if navbar_mode == 'black' || navbar_mode == 'color'
-      "text-black hover:text-gray-800"
+      "text-black"
     elsif navbar_mode == 'white'
-      "text-white hover:text-gray-200"
+      "text-white"
     end
   end
 
   def navbar_hamburger_color(navbar_mode)
     if navbar_mode == 'black'
-      "text-black hover:text-gray-800"
+      "text-black"
     elsif navbar_mode == 'white'
-      "text-green hover:text-green-light"
+      "text-green"
     elsif navbar_mode == 'color'
-      "text-blue hover:text-blue-light"
+      "text-blue"
     end
   end
 end
