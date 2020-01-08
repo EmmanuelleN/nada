@@ -1,5 +1,10 @@
 <% content_for :navbar_mode, 'black' %>
 
+<% content_for :meta_title, 'nada. le studio web qui pense produit plutôt que technique' %>
+<% content_for :meta_desc,
+  'Nada est un studio web basé à Lyon qui imagine, conçoit et développe vos sites et applications web.'
+%>
+
 <section class="min-h-screen flex flex-col">
   <div class="bg-green-light flex-grow BottomBorder flex flex-col justify-center">
     <div class="container lg:px-16">
@@ -130,7 +135,10 @@
   <div class="flex flex-wrap lg:-mx-4">
     <div class="w-full lg:w-3/4 lg:px-4 mb-8 lg:mb-0">
 
-      <%= image_tag('mon-cdi-presentation', class: 'w-full h-48 sm:h-96 object-cover mb-2') %>
+      <%= image_tag('mon-cdi-presentation',
+        class: 'w-full h-48 sm:h-96 object-cover mb-2',
+        alt: 'Maquettes du projet Mon CDI avec plusieurs écrans présentés sur un mobile') 
+      %>
       <%= link_to "Découvrir le projet →", mon_cdi_project_path,
         class: "font-mono font-bold text-blue text-right float-right
                hover:underline"

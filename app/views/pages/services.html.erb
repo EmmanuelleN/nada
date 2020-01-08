@@ -1,3 +1,9 @@
+<% content_for :meta_title, 'Services | nada, studio web.' %>
+<% content_for :meta_desc,
+  "Nada est un studio qui imagine, conçoit et développe vos sites et applications web. Découvrez notre offre en
+  conception, design et développement web."
+%>
+
 <% content_for :navbar_mode, 'white' %>
 
 <section class="bg-gray-900 pb-12 md:pb-20 pt-32">
@@ -16,18 +22,21 @@
         </p>
         <p class="font-body text-gray-200 mb-4">
           Concevoir une application ou un site web commence toujours par répondre à des questions : quel problème
-          allez-vous résoudre pour vos utilisateurs ? De quelle façon allez-vous le résoudre ? Quelles sont les
+          allez-vous résoudre pour vos utilisateur·rice·s ? De quelle façon allez-vous le résoudre ? Quelles sont les
           fonctionnalités à privilégier ?
         </p>
         <p class="font-body text-gray-200 mb-4">
           Chez nada, on n'est pas très fan de cahier des charges et de projections sur des années. Notre approche est
           agile et pragmatique : on discute avec vous, afin de comprendre qui vous êtes vraiment. Puis on étudie
-          vos utilisateurs pour comprendre leurs besoins. Et enfin nous créons un plan d'action à partir de ces recherches.
+          vos utilisateur·rice·s pour comprendre leurs besoins. Et enfin nous créons un plan d'action à partir de ces
+          recherches.
         </p>
         <p class="font-body text-gray-200 mb-4">
           Parfois, la meilleure façon de créer cette stratégie est d'impliquer au maximum votre équipe. Pour celà, nous
           proposons aussi des workshops, de quelques heures à plusieurs jours, tels que le
-          <%= link_to "Design Sprint", 'https://www.gv.com/sprint/', class: 'underline hover:text-white' %>,
+          <%=
+            link_to "Design Sprint", 'https://www.gv.com/sprint/', class: 'underline hover:text-white', target: '_blank'
+          %>,
           une méthode d'idéation développée par Google. L'union fait la force !
         </p>
       </div>
@@ -41,13 +50,13 @@
           Branding · UX Design · UI Design · Tests utilisateurs
         </p>
         <p class="font-body text-gray-200 mb-4">
-          Votre marque est votre premier outil pour communiquer avec vos clients. Couleurs, polices, logo,
+          Votre marque est votre premier outil pour communiquer avec vos client·e·s. Couleurs, polices, logo,
           façon d'écrire : nous vous aidons à définir votre identité.
         </p>
         <p class="font-body text-gray-200 mb-4">
-          Nous designons nos applications et sites web avec l'ergonomie au premier plan. Vos utilisateurs vous en
-          remercierons ! Et notre travail de recherche ne s'arrête pas à la stratégie : nous pouvons travailler en mode itératif, et
-          tester la clarté et l'attrait du design de façon régulière auprès de vos utilisateurs.
+          Nous designons nos applications et sites web en privilégiant l'ergonomie. Vos utilisateur·rice·s vous en
+          remercierons ! Et notre travail de recherche ne s'arrête pas à la stratégie : nous pouvons travailler en
+          mode itératif, et tester la clarté et l'attrait du design de façon régulière auprès de vos utilisateur·rice·s.
         </p>
       </div>
 
@@ -62,8 +71,8 @@
         <p class="font-body text-gray-200 mb-4">
           L'étape de développement nous permet de donner vie à vos applications et sites web. Pour cela, la qualité du
           code est essentielle pour nous : c'est cette qualité qui vous permettra de procurer une expérience stable et
-          agréable à vos utilisateurs, mais également ce qui vous permettra de faire évoluer facilement votre application
-          ou site internet.
+          agréable à vos utilisateur·rice·s, mais également ce qui vous permettra de faire évoluer facilement
+          votre application ou site internet.
         </p>
         <p class="font-body text-gray-200 mb-4">
           Nous développons de façon agile, ce qui nous permet de vous livrer rapidement et régulièrement des fonctionnalités.
@@ -74,7 +83,7 @@
           Enfin, nous pensons que la meilleure technologie ou le meilleur outil n'est pas forcément celui le plus à la
           mode ou le plus complexe. Nous adaptons nos choix techniques en fonction des besoins. Nous n'hésitons pas
           à employer des outils et des solutions déjà conçues si ceci vous fait gagner du temps. Mais nous n'hésitons pas
-          non plus à développer des solutions 100% sur mesure si c'est ce qui apporte le plus à projet !
+          non plus à développer des solutions 100% sur mesure si c'est ce qui apporte le plus à votre projet !
         </p>
       </div>
   </div>
