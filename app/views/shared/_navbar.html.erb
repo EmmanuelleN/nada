@@ -1,6 +1,6 @@
 <navbar class="h-24 absolute w-full top-0 font-mono font-bold">
   <div class="flex container items-baseline justify-between my-6 lg:px-16">
-    <%= link_to root_path do %>
+    <%= link_to root_path, aria: { label: 'Logo Nada' } do %>
       <% if navbar_mode == 'black' %>
         <%= embedded_svg 'logo-nada-noir.svg', class: 'w-auto h-8' %>
       <% elsif navbar_mode == 'color' %>
