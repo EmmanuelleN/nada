@@ -11,9 +11,11 @@
     z-index: 10;
     color: $white;
     position: relative;
+    background-color: $black;
 
     &--blue {
       color: $blue;
+      background-color: $white;
     }
   }
 

@@ -16,7 +16,7 @@
   <% end %>
 
   <div class="mt-12 lg:mt-24">
-    <%= link_to root_path do %>
+    <%= link_to root_path, aria: { label: 'Logo Nada' } do %>
       <%= embedded_svg 'logo-nada-noir-bleu.svg', class: 'w-auto h-8' %>
     <% end %>
     <div class="flex flex-wrap lg:-mx-16 mt-12">
