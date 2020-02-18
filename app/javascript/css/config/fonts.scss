@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Klima';
-  src: font-url('/../../assets/fonts/klima-regular.otf');
+  src: url('/fonts/klima-regular.otf');
   font-weight: normal;
   font-display: fallback;
 }
 
 @font-face {
   font-family: 'Klima';
-  src: font-url('/../../assets/fonts/klima-bold.otf');
+  src: url('/fonts/klima-bold.otf');
   font-weight: bold;
   font-display: fallback;
 }
 
 @font-face {
   font-family: 'Klima';
-  src: font-url('/../../assets/fonts/klima-light.otf');
+  src: url('/fonts/klima-light.otf');
   font-weight: lighter;
   font-display: fallback;
 }
